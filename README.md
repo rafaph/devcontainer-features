@@ -4,7 +4,7 @@
 
 ## Usage
 
-https://code.visualstudio.com/docs/devcontainers/containers
+https://code.visualstudio.com/docs/devcontainers/containers#_dev-container-features
 
 ## Available Features
 
