@@ -1,0 +1,22 @@
+{
+    "description": "Install Goose CLI",
+    "documentationURL": "https://github.com/rafaph/devcontainers-features/tree/main/src/goose-cli",
+    "id": "goose-cli",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ],
+    "name": "Goose CLI",
+    "options": {
+        "installPath": {
+            "default": "/usr/local",
+            "description": "Where goose binary will be installed, the final path will have `bin` added in the end, e.g: `/usr/local/bin`",
+            "type": "string"
+        },
+        "version": {
+            "default": "latest",
+            "description": "The version to be installed.",
+            "type": "string"
+        }
+    },
+    "version": "1.0.0"
+}

@@ -1,0 +1,42 @@
+{
+    "install-both": {
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:2": {
+                "upgradePackages": "true"
+            },
+            "goose-cli": {
+                "installPath": "/tmp",
+                "version": "v3.19.2"
+            }
+        },
+        "image": "alpine:3.19",
+        "remoteEnv": {
+            "PATH": "${containerEnv:PATH}:/tmp/bin"
+        }
+    },
+    "install-path": {
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:2": {
+                "upgradePackages": "true"
+            },
+            "goose-cli": {
+                "installPath": "/tmp"
+            }
+        },
+        "image": "debian:latest",
+        "remoteEnv": {
+            "PATH": "${containerEnv:PATH}:/tmp/bin"
+        }
+    },
+    "install-version": {
+        "features": {
+            "ghcr.io/devcontainers/features/common-utils:2": {
+                "upgradePackages": "true"
+            },
+            "goose-cli": {
+                "version": "v3.19.2"
+            }
+        },
+        "image": "ubuntu:latest"
+    }
+}

@@ -1,8 +1,17 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
     "customizations": {
         "vscode": {
+            "extensions": [
+                "mads-hartmann.bash-ide-vscode",
+                "EditorConfig.EditorConfig",
+                "natqe.reload",
+                "timonwong.shellcheck",
+                "redhat.vscode-yaml"
+            ],
             "settings": {
+                "[yaml]": {
+                    "editor.defaultFormatter": "redhat.vscode-yaml"
+                },
                 "json.schemas": [
                     {
                         "fileMatch": [
@@ -11,15 +20,15 @@
                         "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
                     }
                 ]
-            },
-            "extensions": [
-                "mads-hartmann.bash-ide-vscode"
-            ]
+            }
         }
     },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+        "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
     },
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
     "remoteUser": "node",
-    "updateContentCommand": "npm install -g @devcontainers/cli"
+    "updateContentCommand": "npm install -g @devcontainers/cli && pre-commit install -f --install-hooks"
 }

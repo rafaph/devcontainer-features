@@ -1,13 +1,8 @@
 {
-    "color_and_hello": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "install-latest-goose": {
         "features": {
-            "color": {
-                "favorite": "purple"
-            },
-            "hello": {
-                "greeting": "Greetings"
-            }
-        }
+            "goose-cli": {}
+        },
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu"
     }
 }
