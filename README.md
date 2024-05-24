@@ -4,7 +4,7 @@
 
 ## Usage
 
-https://containers.dev/implementors/features/#referencing-a-feature
+https://code.visualstudio.com/docs/devcontainers/containers
 
 ## Available Features
 
