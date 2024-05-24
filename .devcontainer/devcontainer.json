@@ -12,6 +12,7 @@
                 "[yaml]": {
                     "editor.defaultFormatter": "redhat.vscode-yaml"
                 },
+                "http.proxyStrictSSL": false,
                 "json.schemas": [
                     {
                         "fileMatch": [
@@ -24,8 +25,8 @@
         }
     },
     "features": {
-        "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/prulloac/devcontainer-features/pre-commit:1": {},
         "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
     },
     "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
