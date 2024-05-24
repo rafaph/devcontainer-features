@@ -12,7 +12,7 @@ body:
     id: version
     attributes:
       label: Feature id and version
-      description: 'For example: ghcr.io/devcontainers-contrib/features/deno:1.0.2'
+      description: 'For example: ghcr.io/rafaph/devcontainer-features/goose-cli:1'
     validations:
       required: false
   - type: input
