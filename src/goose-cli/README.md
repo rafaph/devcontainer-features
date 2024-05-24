@@ -1,7 +1,7 @@
 
 # Goose CLI (goose-cli)
 
-Install Goose CLI
+Install Goose CLI (from https://github.com/pressly/goose)
 
 ## Example Usage
 

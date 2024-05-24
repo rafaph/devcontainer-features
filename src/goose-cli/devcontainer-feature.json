@@ -1,5 +1,5 @@
 {
-    "description": "Install Goose CLI",
+    "description": "Install Goose CLI (from https://github.com/pressly/goose)",
     "documentationURL": "https://github.com/rafaph/devcontainers-features/tree/main/src/goose-cli",
     "id": "goose-cli",
     "installsAfter": [
